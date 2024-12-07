@@ -7,13 +7,13 @@ let package = Package(
     name: "SwiftMatrixLibrary",
 	platforms: [
 		.macOS(.v11),
-		.iOS(.v13)],
-   
+		.iOS(.v13)
+	],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library( 
             name: "SwiftMatrix", 
-            targets: ["SwiftMatrixTarget"]),
+            targets: ["SwiftMatrixTarget"])
       ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -27,6 +27,6 @@ let package = Package(
             dependencies: []),
        .testTarget(
             name: "SwiftMatrixTests", 
-            dependencies: ["SwiftMatrixTarget"]),
+            dependencies: ["SwiftMatrixTarget"])
    ]
 )
